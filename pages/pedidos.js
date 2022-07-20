@@ -3,7 +3,7 @@ import { useQuery, gql } from '@apollo/client';
 
 import Layout from '../components/Layout';
 import Loading from '../components/Loading';
-import Pedido from '../components/pedido';
+import Pedido from '../components/Pedido';
 
 const OBTENER_PEDIDOS = gql`
   query obtenerPedidosVendedor {
