@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import { ApolloProvider } from '@apollo/client';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import PedidoState from '../context/pedidos/PedidoState';
+import client from '../config/apollo';
 
-export default MyApp
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <ApolloProvider client={client}>
+      <PedidoState>
+        <Component {...pageProps} />
+      </PedidoState>
+    </ApolloProvider>
+  );
+};
+
+export default MyApp;
