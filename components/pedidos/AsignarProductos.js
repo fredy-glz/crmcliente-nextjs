@@ -55,7 +55,7 @@ const AsignarProductos = () => {
         getOptionLabel={(opciones) =>
           `${opciones.nombre} - ${opciones.existencia} Disponibles`
         }
-        placeholder="Busque o selecicone el Producto"
+        placeholder="Busque o seleccione el Producto"
         noOptionsMessage={() => 'No hay resultados'}
       />
     </>
