@@ -1,10 +1,10 @@
-import { gql, useQuery } from '@apollo/client';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+import { gql, useQuery } from "@apollo/client";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
-import Layout from '../components/Layout';
-import Cliente from '../components/Cliente';
-import Loading from '../components/Loading';
+import Layout from "../components/Layout";
+import Cliente from "../components/Cliente";
+import Loading from "../components/Loading";
 
 const OBTENER_CLIENTES_USUARIO = gql`
   query obtenerClientesVendedor {
@@ -28,9 +28,9 @@ const Index = () => {
     return <Loading />;
   }
 
-  if (!data.obtenerClientesVendedor) {
+  if (!data?.obtenerClientesVendedor) {
     client.clearStore();
-    router.push('/login');
+    router.push("/login");
     return <Loading />;
   }
 

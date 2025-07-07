@@ -1,15 +1,12 @@
-import React from 'react';
+import React from "react";
 
 const Loading = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div
-        className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full"
-        role="status"
-      >
-        <span className="visually-hidden">Loading...</span>
-      </div>
-    </div>
+    <div class="h-screen bg-white">
+<div class="flex justify-center items-center h-full">
+  <img class="h-16 w-16" src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif" alt="" />
+</div>
+</div>
   );
 };
 
